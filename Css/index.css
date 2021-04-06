@@ -1,0 +1,87 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: "Dela Gothic One", cursive, "Lexend", sans-serif, "Noto Sans Kr",
+    sans-serif;
+  font-family: "Lexend", sans-serif;
+}
+
+div {
+  background: rgb(255, 255, 255);
+}
+
+#first-nav {
+  text-align: right;
+  padding: 12px;
+}
+
+#second-nav {
+  background: white;
+  padding: 10px;
+}
+
+#second-nav img {
+  height: 60px;
+}
+
+#banner {
+  text-align: center;
+  padding: 90px;
+  background-image: url(https://placeimg.com/1000/300/tech);
+}
+
+#banner h1 {
+  color: white;
+  font-size: 58px;
+  margin: 12px;
+}
+#banner button {
+  background: rgb(63, 63, 63);
+  color: white;
+  padding: 10px 20px;
+  margin: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#items {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#items div {
+  text-align: center;
+  margin: 10px;
+  width: 20%;
+  border: 1px solid grey;
+}
+
+#items div p {
+  margin: 15px;
+}
+
+#items div img {
+  width: 100%;
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background: grey;
+}
+
+.paginacion {
+  border: none;
+  padding: 12px 24px;
+  background: rgb(167, 167, 167);
+}
+
+.paginacion:hover {
+  font-weight: bold;
+  box-shadow: black 2px 2px 2px;
+}
