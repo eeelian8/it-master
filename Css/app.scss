@@ -1,137 +1,30 @@
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-}
-
-a:hover {
-  color: black;
-}
-
-body {
-  font-family: "Dela Gothic One", cursive, "Lexend", sans-serif, "Noto Sans Kr",
-    sans-serif;
-  font-family: "Lexend", sans-serif;
-}
-
-div {
-  background: rgb(255, 255, 255);
-}
-
-#first-nav {
-  text-align: right;
-  padding: 12px;
-  background: grey;
-}
+$default-padding: 12px;
 
 #second-nav {
-  display: flex;
-  background: white;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-#second-nav-menu img {
-  height: 60px;
-}
-
-#banner {
-  text-align: center;
-  padding: 90px;
-  background-image: url(https://placeimg.com/1000/300/tech);
-}
-
-#banner h1 {
-  color: white;
-  font-size: 58px;
-  margin: 12px;
-}
-#banner button {
-  background: rgb(63, 63, 63);
-  color: white;
-  padding: 10px 20px;
-  margin: 12px;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-#items {
-  display: flex;
-  padding: 50px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.items-product {
-  text-align: center;
-  margin: 10px;
-  width: 20%;
-  border: 1px solid grey;
-}
-
-.items-product p {
-  margin: 15px;
-}
-
-.items-product img {
-  width: 100%;
-}
-
-.footer {
-  height: 200px;
-  width: 100%;
-  background: grey;
-}
-
-.paginacion {
-  border: none;
-  padding: 12px 24px;
-  background: rgb(167, 167, 167);
-}
-
-.paginacion:hover {
-  font-weight: bold;
-  box-shadow: black 2px 2px 2px;
-}
-
-@media screen and (max-width: 768px) {
-  .items-product {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #items {
-    padding: 12px;
+  .logo {
+    height: 36px;
   }
 
-  .items-product {
-    width: 100%;
-  }
-
-  #second-nav-menu {
-  }
-
-  #second-nav-menu img {
-    height: 50px;
+  .second-nav-menu {
+    position: relative;
   }
 
   .second-nav-links {
     display: none;
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    background: white;
   }
 
-  .second-nav-burger {
+  .second-nav-hamburger {
+    border: 1px solid gray;
     text-align: center;
-  }
 
-  .second-nav-burger:hover + .second-nav-links {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+    &hover + .second-nav-links {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
   }
 }
