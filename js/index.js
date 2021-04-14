@@ -60,4 +60,7 @@ botonDeEnviar.addEventListener('click', function() {
   botonDeEnviar.parentElement.remove()
   let parrafo = document.createElement('p')
   parrafo.innerHTML = "Hemos recibido la suscripcion"
+
+  document.querySelector('#footer').appendChild
+
 })
