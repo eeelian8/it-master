@@ -92,6 +92,7 @@ button {
 }
 
 .paginacion {
+  text-align: center;
   border: none;
   padding: 12px 48px;
   background: goldenrod;
