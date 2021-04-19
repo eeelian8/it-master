@@ -1,46 +1,64 @@
-// // array, arreglo, matriz, lista, vector
+//  Reemplazo dinamico del #items
 
-// // var nombre = [
-// //   'Alejandro', 
-// //   'Ezequiel',
-// //   'Villafane',
-// // ]
-
-// // var mixto = [
-// //   'Soy un string',
-// //   11,
-// //   null,
-// //   true,
-// // ]
-
-// // console.log(mixto[0])
-// // // console.log(mixto.length) para ver el total
-
-// // mixto.push('nuevo dato')
-
-
-// // // Iteraciones
-// // // Desde - Hasta
-// // // salto
-
-// // for (var i = 0; i < 11; i++) {
-// //   console.log(i)
-// // }
-
-
-
-// //  Array Asociativo
-// var usuario = {
-//   primerNombre : 'Elian',
-//   apellido: 'Leguizamon',
-  
-// }
-
-// //  usuario.(ejemplo)  usuario.primerNombre
-
-
-var linksContainer = document.querySelector('.second-nav-links')
+var itemsDiv = document.querySelector('#items');
 var links = [
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+  {
+    img: 'https://placeimg.com/400/400/arch',
+    p: 'Product Category One',
+  },
+]
+for (var i = 0; i < links.length; i++) {
+  itemsDiv.innerHTML += '<div class="item-product"><img src="' + links[i].img + '" alt="imagen" /><p><span>' + links[i].p + '</span></p></div>'
+}
+
+// Reemplazo dinamico del Second-Nav
+
+var menuContainer = document.querySelector('.second-nav-links')
+var menuLinks = [
   {
     href: '#home',
     name: 'Home',
@@ -56,7 +74,7 @@ var links = [
   {
     href: '#Contacto',
     name: 'Contacto',
-  }
+  },
 ]
 var links = [
   'home',
@@ -64,30 +82,6 @@ var links = [
   'Productos',
   'Contacto',
 ]
-for (var i = 0; i < links.length; i++) {
-  linksContainer.innerHTML += '<a href=""' + links[i].href + '>' + links[i].name + '</a>'
-}
-
-// ------------------------------------------
-
-var divContainer = document.querySelector('#items')
-var divs = [
-  {
-    img:'https://placeimg.com/400/400/arch',
-    p:'Product category one',
-  }
-]
-for (var i = 0; i < divs.length; i++) {
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
-  divContainer.innerHTML += '<div class="item-product">' + '<img src="' + divs[i].img + '"' + '>' + '<p><span>' + divs[i].p + '</span></p>' + '</div>'
+for (var i = 0; i < menuLinks.length; i++) {
+  menuContainer.innerHTML += '<a href=""' + menuLinks[i].href + '>' + menuLinks[i].name + '</a>'
 }
